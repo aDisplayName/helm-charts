@@ -3,6 +3,54 @@ entries:
   kube-image-keeper:
   - annotations:
       artifacthub.io/changes: |-
+        - description: Fix unit test ([#15](https://github.com/aDisplayName/kube-image-keeper/issues/15))
+          kind: fixed
+          links:
+          - name: GitHub commit
+            url: https://github.com/aDisplayName/kube-image-keeper/commit/88acc28a07c696626c2da56704b03f9ac334c57d
+        - description: Move progress update to outter loop ([#14](https://github.com/aDisplayName/kube-image-keeper/issues/14))
+          kind: fixed
+          links:
+          - name: GitHub commit
+            url: https://github.com/aDisplayName/kube-image-keeper/commit/32859308f816718ab12429a7f8882b2ab41092f7
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Chart Sources
+          url: https://github.com/enix/kube-image-keeper/tree/main/helm/kube-image-keeper
+        - name: Helm Repository
+          url: https://charts.enix.io
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
+    appVersion: 1.10.0-alpha.9
+    created: "2024-08-26T17:14:42.386316389Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.2.0
+    description: kuik is a container image caching system for Kubernetes.
+    digest: 2433430e0e7b3ca0b7a898ae43d2f46234f5e1a1ab9ceff2c33035b31cf8390b
+    home: https://github.com/enix/kube-image-keeper
+    maintainers:
+    - email: contact@enix.fr
+      name: Enix
+      url: https://github.com/enixsas
+    - email: paul.laffitte@enix.fr
+      name: Paul Laffitte
+      url: https://github.com/paullaffitte
+    - email: david.donchez@enix.fr
+      name: David Donchez
+      url: https://github.com/donch
+    name: kube-image-keeper
+    sources:
+    - https://github.com/enix/kube-image-keeper
+    type: application
+    urls:
+    - https://github.com/aDisplayName/helm-charts/releases/download/kube-image-keeper-1.10.0-alpha.9/kube-image-keeper-1.10.0-alpha.9.tgz
+    version: 1.10.0-alpha.9
+  - annotations:
+      artifacthub.io/changes: |-
         - description: Title ([#13](https://github.com/aDisplayName/kube-image-keeper/issues/13))
           kind: fixed
           links:
@@ -431,4 +479,4 @@ entries:
     urls:
     - https://github.com/aDisplayName/helm-charts/releases/download/kube-image-keeper-1.9.4-alpha.4/kube-image-keeper-1.9.4-alpha.4.tgz
     version: 1.9.4-alpha.4
-generated: "2024-08-26T16:37:04.57458499Z"
+generated: "2024-08-26T17:14:42.386368477Z"
