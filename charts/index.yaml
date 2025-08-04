@@ -3,6 +3,53 @@ entries:
   kube-image-keeper:
   - annotations:
       artifacthub.io/changes: |-
+        - description: Fix flaky unit test due to race condition in log fixture ([#24](https://github.com/aDisplayName/kube-image-keeper/issues/24))
+          kind: fixed
+          links:
+          - name: GitHub commit
+            url: https://github.com/aDisplayName/kube-image-keeper/commit/7e5af0540b698197ea1a60e584f1131680d0dbec
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Chart Sources
+          url: https://github.com/enix/kube-image-keeper/tree/main/helm/kube-image-keeper
+        - name: Helm Repository
+          url: https://charts.enix.io
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
+    appVersion: 1.11.0-alpha.2
+    created: "2025-08-04T15:32:10.819969917Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://charts.bitnami.com/bitnami
+      version: 13.2.0
+    - condition: docker-registry-ui.enabled
+      name: docker-registry-ui
+      repository: https://helm.joxit.dev
+      version: 1.1.3
+    description: kuik is a container image caching system for Kubernetes.
+    digest: 026bdc35523ad62e6f783dee5aa79561bccd683ee8e0057a8530c340f029a87e
+    home: https://github.com/enix/kube-image-keeper
+    maintainers:
+    - email: contact@enix.fr
+      name: Enix
+      url: https://github.com/enixsas
+    - email: paul.laffitte@enix.fr
+      name: Paul Laffitte
+      url: https://github.com/paullaffitte
+    - email: david.donchez@enix.fr
+      name: David Donchez
+      url: https://github.com/donch
+    name: kube-image-keeper
+    sources:
+    - https://github.com/enix/kube-image-keeper
+    type: application
+    urls:
+    - https://github.com/aDisplayName/helm-charts/releases/download/kube-image-keeper-1.11.0-alpha.2/kube-image-keeper-1.11.0-alpha.2.tgz
+    version: 1.11.0-alpha.2
+  - annotations:
+      artifacthub.io/changes: |-
         - description: build
           kind: fixed
           links:
@@ -740,4 +787,4 @@ entries:
     urls:
     - https://github.com/aDisplayName/helm-charts/releases/download/kube-image-keeper-1.9.4-alpha.4/kube-image-keeper-1.9.4-alpha.4.tgz
     version: 1.9.4-alpha.4
-generated: "2025-08-04T14:08:32.300777478Z"
+generated: "2025-08-04T15:32:10.820122121Z"
