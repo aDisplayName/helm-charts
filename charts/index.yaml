@@ -12,6 +12,29 @@ entries:
           url: https://adisplayname.github.io/helm-charts/charts
       artifacthub.io/prerelease: "true"
     apiVersion: v2
+    appVersion: 1.0.0-beta.10
+    created: "2025-09-15T22:23:57.26801588Z"
+    description: File Upload Sample on ASP.NET Core.
+    digest: 8c8e9cbadc9cd086bfc9cedb1981965470a41ac4fccb50b415a897d58d778e40
+    home: https://github.com/aDisplayName/aspnet-file-upload-perf
+    name: aspnet-file-upload-perf
+    sources:
+    - https://github.com/aDisplayName/aspnet-file-upload-perf
+    type: application
+    urls:
+    - https://github.com/aDisplayName/helm-charts/releases/download/aspnet-file-upload-perf-1.0.0-beta.10/aspnet-file-upload-perf-1.0.0-beta.10.tgz
+    version: 1.0.0-beta.10
+  - annotations:
+      artifacthub.io/changes: ""
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/license: MIT
+      artifacthub.io/links: |
+        - name: Chart Sources
+          url: https://github.com/aDisplayName/aspnet-file-upload-perf/tree/main/helm/aspnet-file-upload-perf
+        - name: Helm Repository
+          url: https://adisplayname.github.io/helm-charts/charts
+      artifacthub.io/prerelease: "true"
+    apiVersion: v2
     appVersion: 1.0.0-beta.9
     created: "2025-09-15T22:13:28.777263828Z"
     description: File Upload Sample on ASP.NET Core.
@@ -881,4 +904,4 @@ entries:
     urls:
     - https://github.com/aDisplayName/helm-charts/releases/download/kube-image-keeper-1.9.4-alpha.4/kube-image-keeper-1.9.4-alpha.4.tgz
     version: 1.9.4-alpha.4
-generated: "2025-09-15T22:13:28.777349599Z"
+generated: "2025-09-15T22:23:57.268107Z"
